@@ -11,15 +11,1853 @@
     --bgColor: #F4F0EC;
     --textColor: #CDA274;
 }
+/* Header hissesinin baslangisi  */
 .header-parents{
     width: 100%;
-    height: 100px;
+    height: 100px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .header{
-    /* background-color: red; */
     height: 50px;
     width: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.logo-interno{
+    display: flex;
+    align-items: center;
+}
+.logo-interno span{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.page-link{
+    margin-top: 1.5rem;
+}
+.page-link .page-link-ul{
+    display: flex;
+}
+.page-link .page-link-ul li{
+    list-style: none;
+    margin-right: 4rem;
+    position: relative;
+}
+.page-link .page-link-ul li a{
+    text-decoration: none;
+    font-size: var(--size);
+    color: var(--colorBlack);
+    font-weight: bold;
+}
+.page-link .page-link-ul li a:hover{
+color: var(--textColor);
+transition: 0.3s ease-in-out;
+
+}
+.pages:hover .pages-link-ul{
+display: block;
+transition: 0.3s ease-in-out;
+background-color: var(--bgColor);
+
+}
+.page-link-ul:nth-last-child(1){
+    font-size: var(--size);
+}
+.page-link-ul:nth-last-child(1):hover{
+    cursor: pointer;
+    color: var(--textColor);
+}
+    
+.pages-link-ul{
+position: absolute;
+left: -2rem;
+margin-top: 0.2rem;
+z-index: 9999;
+display: none;
+}
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+}
+.hamburger span{
+    width: 30px;
+    height: 3px;
+    background-color: var(--colorBlack);
+}
+.popup{
+    display: none;
+}
+
+.parents{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.child{
+    width: 80%;
+    height: 50px;
+    background-color: red;
+}
+/* Header hissesinin qutaracagi  */
+
+/* arxan fon sekil olan hisse baslangic */
+
+.bg-img{
+    background-image: url(./Images/bgImg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    border-radius: 0 0 0 35%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 15rem;
+}
+.text-parents{
+    width: 570px;
+}
+.text-h1-bg h1{
+    font-size: 85px;
+    font-weight: bold;
+}
+.text-bg span{
+    font-size: var(--size);
+}
+.button{
+margin-top: 35px;
+}
+.button button{
+    width: 220px;
+    height: 75px;
+    background-color: var(--colorBlack);
+    color: white;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: var(--size);
+}
+.button button span i{
+    color: var(--textColor);
+    font-weight: bold;
+    font-size: var(--size);
+}
+
+/* arxan fon sekil olan hisse qutaracag */
+
+/* 3 box olan hisse yazilarla baslanqic */
+
+
+.box-parents{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+
+}
+.boxing{
+    width: 84%;
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    gap: 1rem;
+}
+.box span h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.box .nth2{
+    /* padding: 4rem; */
+    text-align: center;
+    padding: 10px;
+}
+.box button{
+    border: none;
+    background-color: inherit;
+    color: var(--colorBlack);
+    font-size: 20px;
+    padding: 0.7rem;
+}
+.box button:hover{
+    background-color: var(--bgColor);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+    
+}
+.box button:hover.box button span i{
+    color: var(--colorBlack);
+}
+.box button span i{
+    color: var(--textColor);
+    font-size: 18px;
+}
+/* 3 box olan hisse yazilarla qutaracag */
+
+/* sol yazi ve sagda sekil olan hissenin baslangic */
+
+.letext-riimage-parents{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+.letext-riimage{
+    width: 84%;
+    display: flex;
+}
+.letext{
+    display: flex;
+    flex-direction: column;
+    padding-right: 4rem;
+    /* gap: 5rem; */
+}
+.text-h1{
+    margin-top: 3rem;
+}
+.text-h1 h1{
+    font-size: 50px;
+    color: var(--colorBlack);
+    font-weight: bold;
+}
+.text-p{
+    margin-top: 3rem;
+}
+.text-p p{
+    font-size: var(--size);
+}
+.tel-icon{
+    display: flex;
+    align-items: center;
+    /* margin-top: 3rem; */
+}
+.tel-icon .tel-icon-i{
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: var(--size);
+    cursor: pointer;
+}
+.tel-icon .tel-icon-i:hover{
+    background-color: var(--colorBlack);
+    color: var(--textColor);
+    transition: 0.3s ease-in-out;
+}
+
+.tel-icon .tel-icon-num{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+
+}
+.tel-icon .tel-icon-num h3{
+    font-size: 20px;
+    color: var(--colorBlack);
+    font-weight: bold;
+    padding-top: 1rem;
+}
+.button-get{
+    margin-top: 3rem;
+}
+.button-get button{
+    width: 240px;
+    height: 75px;
+    border-radius: 18px;
+    background-color: var(--colorBlack);
+    color: white;
+    font-size: var(--size);
+    font-weight: bold;
+    border: none;
+}
+.button-get button span i{
+    color: var(--textColor);
+}
+.button-get button:hover{
+    background-color: var(--bgColor);
+    color: var(--colorBlack);
+    transition: 0.3s ease-in-out;
+    
+}
+
+.riimage img{
+    border-radius: 0 50% 0 20%;
+}
+
+
+/* sol yazi ve sagda sekil olan hissenin qutaracagi */
+
+/* 3 box profilde sekil olan hisse baslangic */
+
+.three-box-parents{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+.three-box{
+    width: 84%;
+    height: 680px;
+    border-radius: 70px;
+    background-color: #F4F0EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.three-box-text h1{
+font-size: 50px;
+color: var(--colorBlack);
+font-weight: bold;
+
+}
+.three-box-info{
+    display: flex;
+   
+}
+
+.three-box-prof{
+    width: 370px;
+    height: 340px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+}
+.three-box-header{
+    display: flex;
+    gap: 1rem;
+}
+.three-box-header .prof-img img{
+    border-radius: 50%;
+}
+.three-box-header .prof-text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+.three-box-header .prof-text span{
+    font-weight: bold;
+}
+.three-box-body p {
+    font-size: var(--size);
+    color: var(--colorBlack);
+}
+/* 3 box profilde sekil olan hisse qutaracag */
+
+/* logolarin oldugu hissenin baslangici  */
+
+.logo-parents{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+.logo{
+    width: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* logolarin oldugu hissenin qutaracagi  */
+
+/* body hissesin de yazi olan hissesinin baslangici */
+
+
+.body-text-parents{
+    width: 100%;
+    padding-top:10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body-text{
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.body-text h1{
+    font-size: 50px;
+    color: var(--colorBlack);
+    font-weight: bold;
+}
+.body-text p{
+    font-size: var(--size);
+    width: 60%;
+    text-align: center;
+}
+/* body hissesin de yazi olan hissesinin qutarcagi  */
+
+/* box-un icinde 4 dene sekil olan hissenin baslangici  */
+
+
+    .box-img-parents{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10rem;
+    }
+    .box-img{
+        width: 84%;
+    }
+    .bottom-box-img,
+    .top-box-img{
+        display: flex;
+        gap: 3rem;
+    }
+    .boxing-img img{
+        width: 100%;
+    }
+    
+    .right-img img{
+        border-radius: 15% 0 0 0;
+    }
+    .left-img img{
+        border-radius: 0 15% 0 0;
+    }
+    .left-bottom-img img{
+        border-radius:  0 0 15% 0;
+    }
+    .right-bottom-img img{
+        border-radius:  0 0 0 15%;
+
+    }
+
+    .boxing-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        padding: 10px;
+    }
+    .boxing-text span{
+        padding-top: 1.5rem;
+    }
+    .boxing-text span h1{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .boxing-text span p{
+        font-size: var(--size);
+    }
+    .boxing-text button{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bgColor);
+        border: none;
+    }
+    .boxing-text button:hover{
+        background-color: var(--colorBlack);
+        transition: 0.3s ease-in-out;
+    }
+    .boxing-text button:hover i{
+        color: var(--textColor);
+        transition: 0.3s ease-in-out;
+
+    }
+    .boxing-text button i{
+        font-size: var(--size);
+        color: var(--colorBlack);
+    }
+    .bottom-box-img{
+        margin-top: 3rem;
+    }
+/* box-un icinde 4 dene sekil olan hissenin qutaracagi  */
+
+
+    /* saylarin oldugu hissenin baslangici   */
+
+    .number-box-parents{
+        width: 100%;
+        background-color: var(--bgColor);
+        margin-top: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10rem;
+    }
+    .number-box{
+        display: flex;
+        gap: 1rem;
+    }
+    .num-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid var(--textColor);
+        padding: 0 2.5rem;
+
+    }
+    .num-box:nth-child(4){
+        border-right: none;
+    }
+    .num-box span{
+        font-size: 85px;
+        color: var(--textColor);
+        font-weight: bold;
+
+    }
+    .num-box p{
+        font-size: var(--size);
+    }
+    /* saylarin oldugu hissenin baslangici   */
+
+
+    /* footer hissesindeki 3 dene box olan hissenin baslangici */
+
+    .footer-three-box-parents{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10rem;
+    }
+    .footer-three-box{
+        width: 84%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .three-box-footer{
+        width: 100%;
+        border-radius: 62px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .three-box-footer:nth-child(2){
+        background-color: var(--bgColor);
+    }
+    .footer-box-img{
+        position: relative;
+    }
+    .footer-box-img button{
+        position: absolute;
+        top: 14rem;
+        left: 2rem;
+        width: 125px;
+        background-color: white;
+        border: none;
+        border-radius: 8px 8px 8px 0;
+        padding: 8px;
+        color: var(--colorBlack);
+        font-weight: bold;
+    }
+    .footer-box-img button:hover{
+        background-color: var(--colorBlack);
+        color: var(--textColor);
+        transition: 0.3s ease-in-out;
+    }
+  .footer-box-img img{
+    border-radius: 62px 62px 0 0;
+  }
+  .footer-box-text{
+    padding-top: 2rem;
+  }
+  .footer-box-text p{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .footer-box-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .footer-box-icon button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--bgColor);
+  }
+  .footer-box-icon button:nth-child(2){
+    background-color: white;
+  }
+  .footer-box-icon button:hover{
+    background-color: var(--colorBlack);
+    color: var(--textColor);
+    transition: 0.3s ease-in-out;
+  }
+    /* footer hissesindeki 3 dene box olan hissenin qutaracagi */
+
+
+    /* footer baslangic  */
+    /* Footer start */
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    /* background-color: #CDA274; */
+    margin-bottom: 100px;
+}
+
+.footer .foot {
+    display: flex;
+    /* align-items: center; */
+    width: 75%;
+    /* background-color: #122334; */
+}
+
+.footer .foot .left {
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+    /* background-color: blueviolet; */
+}
+
+.footer .foot .left .loggo {
+    display: inline-block;
+}
+
+.footer .foot .left .loggo .logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer .foot .left .loggo .logo img {
+    width: 29px;
+    height: 29px;
+    padding: px px 5px 0px;
+}
+
+.footer .foot .left .loggo .logo h3 {
+    font-family: 'DM Serif Display';
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 10px;
+    color: #292F36;
+}
+
+.footer .foot .left p {
+    padding: 10px 40px 10px 0px;
+    font-family: 'Jost';
+    font-size: 16px;
+    display: flex;
+    letter-spacing: 0.03em;
+    color: #4D5053;
+}
+
+/* .footer .foot .left .image {} */
+
+.footer .foot .left .image img {
+    padding: 0px 25px 0px 0px;
+}
+
+.footer .foot .right {
+    /* background-color: rgb(7, 213, 175); */
+    width: 63%;
+    display: flex;
+}
+
+.footer .foot .right .pages {
+    width: 33%;
+    height: 100%;
+    padding: 7px 0px;
+    /* background-color: brown; */
+}
+
+.footer .foot .right .services {
+    width: 33%;
+    height: 100%;
+    padding: 7px 0px;
+    /* background-color: blue; */
+}
+
+.footer .foot .right .contact {
+    width: 33%;
+    padding: 7px 0px;
+    /* background-color: rgb(226, 43, 211); */
+}
+
+.footer .foot .right .links {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer .foot .right .pages h2,
+.services h2,
+.contact h2 {
+    font-size: 22px;
+}
+
+.footer .foot .right .pages a,
+.services a,
+.contact a {
+    text-decoration: none;
+    font-size: 17px;
+    padding: 4px 0px 9px 0px;
+    color: #4D5053;
+}
+
+/* Footer End */
+
+    /* footer bitis  */
+
+
+    
+
+
+
+
+@media (min-width:0px) and (max-width:280px) {
+
+}
+
+@media (min-width:280px) and (max-width:578px){
+/* Header hissesinin baslangisi  */
+.logo-interno img{
+    width: 20px;
+    height: 20px;
+}
+
+.logo-interno span{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.header{
+width: 90%;
+}
+.page-link .page-link-ul{
+display: none;
+}
+
+.hamburger{
+display: flex;
+cursor: pointer;
+}
+.hamburger.active :nth-child(2){
+opacity: 0;
+}
+.hamburger.active :nth-child(1){
+transform: translateY(8px) rotate(45deg);
+transition: 0.3s ease-in-out;
+
+}
+.hamburger.active :nth-child(3){
+transform: translateY(-8px) rotate(-45deg);
+transition: 0.3s ease-in-out;
+}
+.popup{
+display: block;
+position: absolute;
+left: -100%;
+top: 100px;
+width: 100%;
+height: 100%;
+transition: 0.4s ease-in-out;
+background-color: var(--colorBlack);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.popup .page-link-ul{
+position: relative;
+}
+.popup .page-link-ul .pages-link-ul{
+position: absolute;
+top: 0;
+left:7rem;
+}
+.popup .page-link-ul li{
+   list-style: none;
+   margin-top: 0.3rem;
+}
+.popup .page-link-ul li a{
+    text-decoration: none;
+    color: var(--textColor);
+    padding-right: 1.5rem;
+}
+.popup .page-link-ul li a:hover{
+    background-color: var(--colorBlack);
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+    
+.popup .page-link-ul li i{
+ display: none;
+}
+.popup.active{
+left: 0;
+}
+
+/* Header hissesinin qutaracagi  */
+
+ /* arxan fon sekil olan hisse baslanqic */
+
+ .bg-img{
+    padding-left: 3rem;
+}
+.text-parents{
+    width: 570px;
+}
+.text-h1-bg h1{
+    font-size: 50px;
+}
+
+.button{
+margin-top: 20px;
+}
+.button button{
+    width: 180px;
+    height: 60px;
+}
+.text-bg span{
+    font-size: 15px;
+}
+/* arxan fon sekil olan hisse qutaracag */
+/* 3 box olan hisse yazilarla baslanqic */
+.boxing{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box .nth2{
+    padding: 20px;
+}
+/* 3 box olan hisse yazilarla qutaracag */
+/* sol yazi ve sagda sekil olan hissenin baslangic */
+
+.riimage{
+    display: none;
+}
+.letext-riimage-parents{
+    background-image: url(./Images/rightimg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.letext-riimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.letext-riimage .letext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-h1 h1{
+    font-size: 25px;
+    text-align: center;
+    color: var(--bgColor);
+    text-shadow: 2px 4px 6px var(--textColor);
+}
+.text-p p{
+    text-align: center;
+    color: var(--bgColor);
+    font-weight: bold;
+    font-size: 20px;
+}
+.tel-icon .tel-icon-i{
+    width: 40px;
+    height: 40px;
+}
+.tel-icon .tel-icon-num h3{
+    font-size: 15px;
+}
+.tel-icon .tel-icon-num p{
+    font-size: 12px;
+
+}
+.button-get{
+    margin-top: 3rem;
+}
+.button-get button{
+    width: 200px;
+    height: 60px;
+    border-radius: 18px;
+    background-color: var(--colorBlack);
+    color: white;
+    font-size: var(--size);
+    font-weight: bold;
+    border: none;
+}
+/* sol yazi ve sagda sekil olan hissenin qutaracagi */
+/* 3 box profilde sekil olan hisse baslangic */
+.three-box{
+    width: 90%;
+    height: 100%;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+.three-box-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.three-box-text h1{
+font-size: 15px;
+}
+.three-box-prof{
+    width: 200px;
+    height: 180px;
+    margin-left: 5px;
+    gap: 1rem;
+    padding: 1rem;
+}
+.prof-text span{
+    padding-top: 0;
+    font-size: 10px;
+}
+.three-box-header .prof-img img{
+    width: 40px;
+    height: 40px;
+}
+.three-box-body p {
+    font-size: 13px;
+}
+/* 3 box profilde sekil olan hisse qutaracag */
+/* logolarin oldugu hissenin baslangici  */
+.logo{
+    width: 90%;
+    flex-direction: column;
+    gap: 3rem;
+}
+/* logolarin oldugu hissenin qutaracagi  */
+/* body hissesin de yazi olan hissesinin baslangici */
+.body-text{
+    width: 90%;
+}
+.body-text h1{
+    font-size: 30px;
+}
+.body-text p{
+    font-size: 15px;
+    width: 100%;
+}
+/* body hissesin de yazi olan hissesinin qutarcagi  */
+
+/* box-un icinde 4 dene sekil olan hissenin baslangici  */
+.box-img{
+    width: 90%;
+}
+.bottom-box-img,
+.top-box-img{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxing-text{
+    margin-top: 1rem;
+}
+.boxing-text span h1{
+    font-size: 16px;
+}
+.boxing-text span p{
+    font-size: 13px;
+}
+.boxing-text button{
+    width:  40px;
+    height: 40px;
+}
+
+.boxing-text button i{
+    font-size: 18px;
+}
+/* box-un icinde 4 dene sekil olan hissenin qutaracagi  */
+  /* saylarin oldugu hissenin baslangici   */
+
+  .number-box-parents{
+    padding: 10rem;
+}
+.number-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.num-box{
+    border-right: none;
+    border-bottom: 2px solid var(--textColor);
+    padding: 0 ;
+
+}
+.num-box span{
+    font-size: 65px;
+}
+.num-box p{
+    font-size: 8px;
+    font-weight: bold;
+}
+/* saylarin oldugu hissenin baslangici   */
+/* footer hissesindeki 3 dene box olan hissenin baslangici */
+.footer-three-box{
+    width: 90%;
+    flex-direction: column;
+}
+.footer-box-img button{
+    top: 8rem;
+    left: 1rem;
+    width: 125px;
+    padding: 5px;
+}
+.footer-box-img img{
+width: 100%;
+}
+/* footer hissesindeki 3 dene box olan hissenin qutaracagi */
+
+}
+
+@media(min-width:578px) and (max-width:786px){
+        /* Header hissesinin baslangisi  */
+        .logo-interno img{
+            width: 30px;
+            height: 30px;
+        }
+        
+        .logo-interno span{
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    .header{
+        width: 60%;
+     }
+     .page-link .page-link-ul{
+        display: none;
+       }
+       .hamburger{
+        display: flex;
+        cursor: pointer;
+       }
+       .hamburger.active :nth-child(2){
+        opacity: 0;
+       }
+       .hamburger.active :nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        transition: 0.3s ease-in-out;
+    
+       }
+       .hamburger.active :nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        transition: 0.3s ease-in-out;
+       }
+       .popup{
+        display: block;
+        position: absolute;
+        left: -100%;
+        top: 100px;
+        width: 100%;
+        height: 100vw;
+        transition: 0.4s ease-in-out;
+        background-color: var(--colorBlack);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .popup .page-link-ul{
+        position: relative;
+       }
+       .popup .page-link-ul .pages-link-ul{
+        position: absolute;
+        top: 0;
+        left:8rem;
+       }
+       .popup .page-link-ul li{
+           list-style: none;
+           margin-top: 1.3rem;
+        }
+        .popup .page-link-ul li a{
+            text-decoration: none;
+            color: var(--textColor);
+            padding-right: 2rem;
+        }
+        .popup .page-link-ul li a:hover{
+            background-color: var(--colorBlack);
+            border-radius: 10px;
+            padding: 3px 10px 3px 5px;
+        }
+            
+        .popup .page-link-ul li i{
+         display: none;
+        }
+        .popup.active{
+        left: 0;
+       }
+       
+       /* Header hissesinin qutaracagi  */
+    
+
+        /* arxan fon sekil olan hisse baslanqic */
+
+        .bg-img{
+            padding-left: 8rem;
+        }
+        .text-parents{
+            width: 570px;
+        }
+        .text-h1-bg h1{
+            font-size: 75px;
+        }
+        
+        .button{
+        margin-top: 30px;
+        }
+        .button button{
+            width: 200px;
+            height: 70px;
+        }
+        /* arxan fon sekil olan hisse qutaracag */
+        /* 3 box olan hisse yazilarla baslanqic */
+        .boxing{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .box .nth2{
+            padding: 20px;
+        }
+        /* 3 box olan hisse yazilarla qutaracag */
+
+        /* sol yazi ve sagda sekil olan hissenin baslangic */
+
+        .riimage{
+            display: none;
+        }
+        .letext-riimage-parents{
+            background-image: url(./Images/rightimg.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-top: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .letext-riimage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .letext-riimage .letext{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .text-h1 h1{
+            font-size: 35px;
+            text-align: center;
+            color: var(--bgColor);
+            text-shadow: 2px 4px 6px var(--textColor);
+        }
+        .text-p p{
+            text-align: center;
+            color: var(--bgColor);
+            font-weight: bold;
+        }
+
+/* sol yazi ve sagda sekil olan hissenin qutaracagi */
+/* 3 box profilde sekil olan hisse baslangic */
+.three-box{
+    width: 60%;
+    height: 100%;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+.three-box-text h1{
+font-size: 25px;
+}
+.three-box-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.three-box-prof{
+    width: 300px;
+    height: 280px;
+    margin-left: 10px;
+    gap: 1rem;
+    padding: 2rem;
+}
+.three-box-header .prof-img img{
+    width: 60px;
+    height: 60px;
+}
+.three-box-body p {
+    font-size: 20px;
+}
+/* 3 box profilde sekil olan hisse qutaracag */
+/* logolarin oldugu hissenin baslangici  */
+.logo{
+    width: 60%;
+    flex-direction: column;
+    gap: 3rem;
+}
+/* logolarin oldugu hissenin qutaracagi  */
+/* body hissesin de yazi olan hissesinin baslangici */
+.body-text{
+    width: 60%;
+}
+.body-text h1{
+    font-size: 38px;
+}
+.body-text p{
+    font-size: 19px;
+    width: 85%;
+}
+/* body hissesin de yazi olan hissesinin qutarcagi  */
+/* box-un icinde 4 dene sekil olan hissenin baslangici  */
+.box-img{
+    width: 60%;
+}
+.boxing-text{
+    margin-top: 0;
+}
+.boxing-text span h1{
+    font-size: 13px;
+}
+.boxing-text span p{
+    font-size: 10px;
+}
+.boxing-text button{
+    width: 30px;
+    height: 30px;
+}
+.boxing-text button i{
+    font-size: 12px;
+}
+/* box-un icinde 4 dene sekil olan hissenin qutaracagi  */
+  /* saylarin oldugu hissenin baslangici   */
+
+  .number-box-parents{
+    padding: 10rem;
+}
+.number-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.num-box{
+    border-right: none;
+    border-bottom: 2px solid var(--textColor);
+    padding: 0 ;
+
+}
+/* saylarin oldugu hissenin baslangici   */
+/* footer hissesindeki 3 dene box olan hissenin baslangici */
+.footer-three-box{
+    width: 60%;
+    flex-direction: column;
+}
+.footer-box-img button{
+    top: 12rem;
+    left: 2rem;
+    width: 125px;
+    padding: 8px;
+}
+.footer-box-img img{
+width: 100%;
+}
+/* footer hissesindeki 3 dene box olan hissenin qutaracagi */
+
+
+    }
+ 
+
+@media(min-width:786px) and (max-width:992px){
+     /* Header hissesinin baslangisi  */
+     .header{
+        width: 70%;
+     }
+   .page-link .page-link-ul{
+    display: none;
+   }
+   .hamburger{
+    display: flex;
+    cursor: pointer;
+   }
+   .hamburger.active :nth-child(2){
+    opacity: 0;
+   }
+   .hamburger.active :nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.3s ease-in-out;
+
+   }
+   .hamburger.active :nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.3s ease-in-out;
+   }
+   .popup{
+    display: block;
+    position: absolute;
+    left: -100%;
+    top: 100px;
+    width: 100%;
+    height: 100vw;
+    transition: 0.4s ease-in-out;
+    background-color: var(--colorBlack);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .popup .page-link-ul{
+    position: relative;
+   }
+   .popup .page-link-ul .pages-link-ul{
+    position: absolute;
+    top: 0;
+    left:8rem;
+   }
+   .popup .page-link-ul li{
+       list-style: none;
+       margin-top: 2rem;
+    }
+    .popup .page-link-ul li a{
+        text-decoration: none;
+        color: var(--textColor);
+        padding-right: 2rem;
+    }
+    .popup .page-link-ul li a:hover{
+        background-color: var(--colorBlack);
+        border-radius: 10px;
+        padding: 3px 10px 3px 5px;
+    }
+        
+    .popup .page-link-ul li i{
+     display: none;
+    }
+    .popup.active{
+    left: 0;
+   }
+   
+   /* Header hissesinin qutaracagi  */
+
+/* sol yazi ve sagda sekil olan hissenin baslangic */
+
+.riimage{
+    display: none;
+}
+.letext-riimage-parents{
+    background-image: url(./Images/rightimg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.letext-riimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.letext-riimage .letext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-h1 h1{
+    text-align: center;
+    color: var(--bgColor);
+    text-shadow: 2px 4px 6px var(--textColor);
+}
+.text-p p{
+    text-align: center;
+    color: var(--bgColor);
+    font-weight: bold;
+}
+
+/* sol yazi ve sagda sekil olan hissenin qutaracagi */
+/* 3 box profilde sekil olan hisse baslangic */
+.three-box{
+    width: 70%;
+    height: 100%;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+.three-box-text h1{
+font-size: 35px;
+}
+.three-box-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/* 3 box profilde sekil olan hisse qutaracag */
+
+/* logolarin oldugu hissenin baslangici  */
+.logo{
+    width: 70%;
+}
+.logo-img img{
+    width: 100px;
+}
+/* logolarin oldugu hissenin qutaracagi  */
+/* body hissesin de yazi olan hissesinin baslangici */
+.body-text{
+    width: 70%;
+}
+.body-text h1{
+    font-size: 40px;
+}
+.body-text p{
+    font-size: 20px;
+    width: 70%;
+}
+/* body hissesin de yazi olan hissesinin qutarcagi  */
+/* box-un icinde 4 dene sekil olan hissenin baslangici  */
+.box-img{
+    width: 70%;
+}
+.boxing-text span h1{
+    font-size: 18px;
+}
+.boxing-text span p{
+    font-size: 16px;
+}
+.boxing-text button{
+    width: 50px;
+    height: 50px;
+}
+.boxing-text button i{
+    font-size: 20px;
+}
+/* box-un icinde 4 dene sekil olan hissenin qutaracagi  */
+  /* saylarin oldugu hissenin baslangici   */
+
+  .number-box-parents{
+    padding: 5rem;
+}
+.num-box{
+    padding: 0 1.2rem;
+
+}
+.num-box span{
+    font-size: 60px;
+}
+.num-box p{
+    font-size: 12px;
+}
+/* saylarin oldugu hissenin baslangici   */
+/* footer hissesindeki 3 dene box olan hissenin baslangici */
+.footer-three-box{
+    width: 70%;
+    flex-direction: column;
+}
+.footer-box-img button{
+    top: 22rem;
+    left: 3rem;
+    width: 205px;
+    padding: 10px;
+}
+.footer-box-img img{
+width: 100%;
+}
+/* footer hissesindeki 3 dene box olan hissenin qutaracagi */
+
+
+}
+@media(min-width:992px) and (max-width:1024px){
+    /* Header hissesinin baslangisi  */
+    .header{
+         width: 70%;
+    }
+    .page-link .page-link-ul li{
+        margin-right: 2rem;
+    }
+    /* Header hissesinin qutaracagi  */
+/* sol yazi ve sagda sekil olan hissenin baslangic */
+
+/* box-un icinde 4 dene sekil olan hissenin baslangici  */
+.box-img{
+    width: 70%;
+}
+.boxing-img img{
+    width: 100%;
+}
+.boxing-text span h1{
+    font-size: 21px;
+}
+.boxing-text span p{
+    font-size: 18px;
+}
+.boxing-text button{
+    width: 55px;
+    height: 55px;
+}
+.boxing-text button i{
+    font-size: 18px;
+}
+/* box-un icinde 4 dene sekil olan hissenin qutaracagi  */
+
+
+.letext-riimage{
+    width: 70%;
+}
+.letext{
+    padding-right: 0.5rem;
+}
+.text-h1{
+    margin-top: 3rem;
+}
+.text-h1 h1{
+    font-size: 25px;
+ 
+}
+.text-p{
+    margin-top: 3rem;
+}
+.text-p p{
+    font-size: 15px;
+}
+.button-get{
+    margin-top: 3rem;
+}
+.button-get button{
+    width: 190px;
+    height: 65px;
+    font-size: 18px;
+}
+.riimage img{
+    border-radius: 0 50% 0 20%;
+}
+/* sol yazi ve sagda sekil olan hissenin qutaracagi */
+/* 3 box profilde sekil olan hisse baslangic */
+.three-box{
+    width: 70%;
+    height: 100%;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+.three-box-text h1{
+font-size: 35px;
+}
+.three-box-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/* 3 box profilde sekil olan hisse qutaracag */
+/* logolarin oldugu hissenin baslangici  */
+.logo{
+    width: 70%;
+    justify-content: space-around;
+    gap: 1rem;
+
+}
+/* logolarin oldugu hissenin qutaracagi  */
+/* body hissesin de yazi olan hissesinin baslangici */
+
+
+.body-text-parents{
+    width: 100%;
+    padding-top:10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body-text{
+    width: 70%;
+}
+.body-text p{
+    width: 65%;
+}
+/* body hissesin de yazi olan hissesinin qutarcagi  */
+/* box-un icinde 4 dene sekil olan hissenin baslangici  */
+.box-img{
+    width: 70%;
+}
+.boxing-text span h1{
+    font-size: 23px;
+}
+.boxing-text span p{
+    font-size: 20px;
+}
+.boxing-text button{
+    width: 60px;
+    height: 60px;
+}
+.boxing-text button i{
+    font-size: 20px;
+}
+/* box-un icinde 4 dene sekil olan hissenin qutaracagi  */
+  /* saylarin oldugu hissenin baslangici   */
+
+  .number-box-parents{
+    padding: 6rem;
+}
+.num-box{
+    padding: 0 1.4rem;
+
+}
+.num-box span{
+    font-size: 65px;
+
+}
+.num-box p{
+    font-size: 17px;
+}
+/* saylarin oldugu hissenin baslangici   */
+/* footer hissesindeki 3 dene box olan hissenin baslangici */
+
+.footer-three-box{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.three-box-footer{
+    width: 100%;
+    border-radius: 62px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.footer-box-img button{
+    top: 7rem;
+    left: 1rem;
+    padding: 5px;
+    font-size: 15px;
+}
+.footer-box-img img{
+border-radius: 40px 40px 0 0;
+width: 100%;
+}
+.footer-box-text p{
+font-size: 15px;
+}
+.footer-box-icon button{
+width: 30px;
+height: 30px;
+}
+/* footer hissesindeki 3 dene box olan hissenin qutaracagi */
+}
+
+@media(min-width:1024px) and (max-width:1268px){
+
+/* Header hissesinin baslangisi  */
+.header{
+width: 75%;
+}
+.logo-interno span{
+    font-size: 35px;
+}
+.page-link .page-link-ul li{
+    margin-right: 2.6rem;
+}
+
+/* Header hissesinin qutaracagi  */
+/* sol yazi ve sagda sekil olan hissenin baslangic */
+.letext-riimage{
+    width: 75%;
+}
+.letext{
+   
+    padding-right: 3rem;
+}
+.text-h1{
+    margin-top: 3rem;
+}
+.text-h1 h1{
+    font-size: 30px;
+ 
+}
+.text-p{
+    margin-top: 3rem;
+}
+.text-p p{
+    font-size: 18px;
+}
+.button-get{
+    margin-top: 3rem;
+}
+.button-get button{
+    width: 210px;
+    height: 70px;
+    font-size: 18px;
+}
+.riimage img{
+    border-radius: 0 50% 0 20%;
+}
+/* sol yazi ve sagda sekil olan hissenin qutaracagi */
+/* 3 box profilde sekil olan hisse baslangic */
+.three-box{
+    width: 75%;
+}
+.three-box-text h1{
+font-size: 40px;
+}
+.three-box-prof{
+    width: 260px;
+    height: 220px;
+    margin-left: 5px;
+    gap: 1rem;
+    padding: 1rem;
+}
+.three-box-header .prof-img img{
+    width: 60px;
+    height: 60px;
+}
+.three-box-header .prof-text span{
+    font-size: 15px;
+}
+.three-box-body p {
+    font-size: 18px;
+}
+/* 3 box profilde sekil olan hisse qutaracag */
+/* logolarin oldugu hissenin baslangici  */
+.logo{
+    width: 75%;
+}
+/* logolarin oldugu hissenin qutaracagi  */
+/* body hissesin de yazi olan hissesinin baslangici */
+.body-text{
+    width: 75%;
+}
+/* body hissesin de yazi olan hissesinin qutarcagi  */
+
+/* box-un icinde 4 dene sekil olan hissenin baslangici  */
+.box-img{
+    width: 75%;
+}
+.boxing-text span h1{
+    font-size: 23px;
+}
+.boxing-text span p{
+    font-size: 20px;
+}
+.boxing-text button{
+    width: 60px;
+    height: 60px;
+}
+.boxing-text button i{
+    font-size: 20px;
+}
+/* box-un icinde 4 dene sekil olan hissenin qutaracagi  */
+  /* saylarin oldugu hissenin baslangici   */
+
+  .number-box-parents{
+    padding: 8rem;
+}
+.num-box{
+    padding: 0 1.8rem;
+
+}
+.num-box span{
+    font-size: 75px;
+}
+.num-box p{
+    font-size: 14px;
+}
+/* saylarin oldugu hissenin baslangici   */
+ /* footer hissesindeki 3 dene box olan hissenin baslangici */
+
+.footer-three-box{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.three-box-footer{
+    width: 100%;
+    border-radius: 62px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.footer-box-img button{
+    top: 8rem;
+    left: 1rem;
+    padding: 5px;
+    font-size: 15px;
+}
+.footer-box-img img{
+border-radius: 50px 50px 0 0;
+width: 100%;
+}
+.footer-box-text p{
+font-size: 18px;
+}
+.footer-box-icon button{
+width: 40px;
+height: 40px;
+}
+/* footer hissesindeki 3 dene box olan hissenin qutaracagi */
+}
+
+@media(min-width:1268px) and (max-width:1480px){
+/* 3 box profilde sekil olan hisse baslangic */
+
+.three-box-prof{
+    width: 340px;
+    height: 320px;
+    margin-left: 10px;
+    gap: 1rem;
+    padding: 2rem;
+}
+.three-box-body p {
+    font-size: 20px;
+    color: var(--colorBlack);
+}
+/* 3 box profilde sekil olan hisse qutaracag */
+  /* saylarin oldugu hissenin baslangici   */
+.num-box{
+    padding: 0 2rem;
+
+}
+.num-box span{
+    font-size: 80px;
+    color: var(--textColor);
+    font-weight: bold;
+
+}
+.num-box p{
+    font-size: 19px;
+}
+/* saylarin oldugu hissenin qutaracagi   */
+    
+}
+
